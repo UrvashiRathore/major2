@@ -5,7 +5,7 @@ resource "aws_instance" "ec2_instance" {
   vpc_security_group_ids = [aws_security_group.ec2_security_group.id]
   user_data              = base64encode(file("website.sh"))
   tags = {
-    Name = "aws-ec2-instance"
+    Name = "aws-ec2-instance-u"
   }
 }
 
@@ -36,6 +36,6 @@ resource "aws_security_group" "ec2_security_group" {
   }
 
   tags = {
-    Name = "ec2-sg"
+    Name = "ec2-sg-u"
   }
 }
