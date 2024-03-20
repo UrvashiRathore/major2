@@ -54,7 +54,7 @@ resource "aws_security_group" "Jenkins-sg" {
   }
 
   tags = {
-    Name = "Jenkins-sg"
+    Name = "Jenkins-sg-u"
   }
 }
 
@@ -67,7 +67,7 @@ resource "aws_instance" "web" {
   iam_instance_profile   = aws_iam_instance_profile.example_profile.name
 
   tags = {
-    Name = "Jenkins-ARGO"
+    Name = "Jenkins-ARGO-U"
   }
 
   root_block_device {
