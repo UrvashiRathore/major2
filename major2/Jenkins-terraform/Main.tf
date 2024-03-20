@@ -1,5 +1,5 @@
 resource "aws_iam_role" "example_role" {
-  name = "Jenkins-terraform"
+  name = "Jenkins-terraform-u"
   assume_role_policy = <<EOF
 {
   "Version": "2012-10-17",
@@ -28,7 +28,7 @@ resource "aws_iam_instance_profile" "example_profile" {
 
 
 resource "aws_security_group" "Jenkins-sg" {
-  name        = "Jenkins-Security Group"
+  name        = "Jenkins-Security Group-u"
   description = "Open 22,443,80,8080,9000"
 
   # Define a single ingress rule to allow traffic on all specified ports
